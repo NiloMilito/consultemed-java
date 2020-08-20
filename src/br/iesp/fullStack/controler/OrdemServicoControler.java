@@ -11,19 +11,19 @@ import br.iesp.fullStack.interfaces.IOrdemServico;
 public class OrdemServicoControler implements IOrdemServico {
 
 	@Override
-	public <T> void salvar(T object) {
+	public void salvar(OrdemServico object) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public <T> List<T> listar() {
+	public List<OrdemServico> listar() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <T> void remover(T object) {
+	public void remover(OrdemServico object) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -35,6 +35,12 @@ public class OrdemServicoControler implements IOrdemServico {
 		categorias.add(categoria);
 		OrdemServico os = new OrdemServico(1L, "Situação", "Troca da memória RAM", EnumTipo.INCIDENTE,  categorias);
 		this.salvar(os);
+	}
+
+	@Override
+	public OrdemServico buscar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

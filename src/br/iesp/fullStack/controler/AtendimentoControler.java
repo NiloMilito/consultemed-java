@@ -18,18 +18,18 @@ public class AtendimentoControler implements IAtendimento{
 	}
 
 	@Override
-	public <T> void salvar(T object) {
+	public void salvar(Atendimento object) {
 		this.atendimentos.add((Atendimento) object);		
 	}
 
 	@Override
-	public <T> List<T> listar() {
+	public List<Atendimento> listar() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <T> void remover(T object) {
+	public void remover(Atendimento object) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -48,6 +48,12 @@ public class AtendimentoControler implements IAtendimento{
 	public void guardaHistorico(Historico historico) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public Atendimento buscar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

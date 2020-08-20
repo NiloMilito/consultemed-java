@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import br.iesp.fullStack.entidades.Atendente;
 import br.iesp.fullStack.entidades.Atendimento;
 import br.iesp.fullStack.entidades.Categoria;
 import br.iesp.fullStack.entidades.Cliente;
@@ -21,19 +22,18 @@ public class AtendenteControler implements IAtendente {
 	private AtendimentoControler atendimentoControler;
 
 	@Override
-	public <T> void salvar(T object) {
+	public void salvar(Atendente object) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public <T> List<T> listar() {
-		// TODO Auto-generated method stub
+	public List<Atendente> listar() {
 		return null;
 	}
 
 	@Override
-	public <T> void remover(T object) {
+	public void remover(Atendente object) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -75,6 +75,12 @@ public class AtendenteControler implements IAtendente {
 		
 		this.atendimentoControler.salvar(atendimento);
 		
+	}
+
+	@Override
+	public Atendente buscar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

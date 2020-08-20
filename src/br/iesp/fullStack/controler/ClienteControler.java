@@ -12,29 +12,32 @@ public class ClienteControler implements ICliente {
 	private AtendenteControler atendenteControler;
 
 	@Override
-	public <T> void salvar(T object) {
-		this.clientes.add((Cliente)object);	
+	public void salvar(Cliente object) {
+		this.clientes.add(object);	
 		System.out.println("Cliente Salvo...");
 	}
 
 	@Override
-	public <T> List<T> listar() {			
+	public List<Cliente> listar() {			
 		return null;
 	}
 
 	@Override
-	public <T> void remover(T object) {		
+	public void remover(Cliente object) {		
 		this.clientes.remove(object);
 	}
 
 	@Override
 	public void realizaChamado(Cliente cliente) {
 		System.out.println("Chamada realizada ...!");
-		this.atendenteControler = new AtendenteControler();
-		
-		this.atendenteControler.registraChamada(cliente);
-		
-		
+		this.atendenteControler = new AtendenteControler();		
+		this.atendenteControler.registraChamada(cliente);				
+	}
+
+	@Override
+	public Cliente buscar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

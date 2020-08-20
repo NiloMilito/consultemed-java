@@ -9,19 +9,19 @@ public class TecnicoControler implements ITecnico{
 	private OrdemServicoControler ordemServicoControler;
 
 	@Override
-	public <T> void salvar(T object) {
+	public void salvar(Tecnico object) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public <T> List<T> listar() {
+	public List<Tecnico> listar() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <T> void remover(T object) {
+	public void remover(Tecnico object) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -35,6 +35,12 @@ public class TecnicoControler implements ITecnico{
 	@Override
 	public void atendeOrdemServico(Tecnico tecnico) {
 		this.executaAtendimento();		
+	}
+
+	@Override
+	public Tecnico buscar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

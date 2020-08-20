@@ -2,10 +2,11 @@ package br.iesp.fullStack.interfaces;
 
 import java.util.List;
 
-public interface IGeneric {
+public interface IGeneric<T> {
 	
-	public <T> void salvar(T object);
-	public <T> List<T> listar();
-	public <T> void remover(T object);
+	public void salvar(T object);
+	public List<T> listar();
+	public T buscar(Long id);
+	public void remover(T object);
 
 }
